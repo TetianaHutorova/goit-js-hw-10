@@ -11,9 +11,9 @@ function handlerCreatePromises(evt) {
   const isFulfilled = state.value === 'fulfilled';
 
   const result = createPromises(Number(delay.value), isFulfilled);
-    handlerPromise(result);
-    
-    evt.currentTarget.reset();
+  handlerPromise(result);
+
+  evt.currentTarget.reset();
 }
 
 function createPromises(delay, value) {

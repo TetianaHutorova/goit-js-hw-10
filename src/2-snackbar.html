@@ -4,27 +4,30 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Snackbar</title>
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
+    <a href="./index.html" class="navigation">To home</a>
     <form class="form">
-      <label>
+      <label class="delay">
         Delay (ms)
         <input type="number" name="delay" required />
       </label>
-
       <fieldset>
         <legend>State</legend>
-        <label>
-          <input type="radio" name="state" value="fulfilled" required />
-          Fulfilled
-        </label>
-        <label>
-          <input type="radio" name="state" value="rejected" required />
-          Rejected
-        </label>
+        <div class="checkbox">
+          <label>
+            <input type="radio" name="state" value="fulfilled" required />
+            Fulfilled
+          </label>
+          <label>
+            <input type="radio" name="state" value="rejected" required />
+            Rejected
+          </label>
+        </div>
       </fieldset>
 
-      <button type="submit">Create notification</button>
+      <button type="submit" class="notificationBtn">Create notification</button>
     </form>
 
     <script type="module" src="./js/2-snackbar.js"></script>
